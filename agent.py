@@ -1,7 +1,7 @@
 # agent.py
 import os
 
-# Set OpenAI API key [Use Your Open-api Key]
+# Set OpenAI API key [Use Your Open-api Key my use limit quota is finished]
 os.environ["OPENAI_API_KEY"] = "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"
 
 
