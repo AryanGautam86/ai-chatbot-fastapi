@@ -12,7 +12,7 @@ class Document(Base):
     title = Column(String, unique=True)
     content = Column(Text)
 
-DATABASE_URL = "sqlite:///./test.db"  # Can switch to Postgres later
+DATABASE_URL = "sqlite:///./test.db"  
 engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base.metadata.create_all(bind=engine)
