@@ -184,22 +184,19 @@ from langchain_openai import ChatOpenAI
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
 
-# =========================
+
 # Your OpenRouter API Key
-# =========================
 OPENROUTER_KEY = "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"
 os.environ["OPENAI_API_KEY"] = OPENROUTER_KEY  # Required for ChatOpenAI
 
-# =========================
+
 # Global variables
-# =========================
 vectorstore = None
 qa_chain = None
 embedding_model = None
 
-# =========================
+
 # Initialize FAISS + LLM
-# =========================
 def init_vectorstore():
     """
     Initialize FAISS vectorstore and QA chain.
@@ -226,9 +223,8 @@ def init_vectorstore():
         vectorstore = None
         qa_chain = None
 
-# =========================
+
 # Add a document to FAISS
-# =========================
 def add_document(title: str, content: str):
     """
     Add a new document to the FAISS vectorstore and save index.
@@ -258,9 +254,8 @@ def add_document(title: str, content: str):
     # Save index locally
     vectorstore.save_local("faiss.index")
 
-# =========================
+
 # Ask a question via RAG
-# =========================
 def ask_question(query: str):
     """
     Query the QA chain. Returns a string answer.
