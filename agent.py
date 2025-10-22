@@ -9,7 +9,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 
 
 # USE Your OpenRouter API Key
-OPENROUTER_KEY = "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"
+OPENROUTER_KEY = "USE_YOUR"
 os.environ["OPENAI_API_KEY"] = OPENROUTER_KEY  # Required for ChatOpenAI
 
 
