@@ -1,0 +1,24 @@
+# deployment
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ai
+  template:
+    metadata:
+      labels:
+        app: ai
+    spec:
+      containers:
+      - name: ai
+        image: aryann086/ai:latest
+        ports:
+        - containerPort: 8000
+        env:
+        - name: OPENAI_API_KEY
+          value: "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"

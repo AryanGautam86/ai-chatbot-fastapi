@@ -1,0 +1,15 @@
+# service
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: ai-service
+spec:
+  type: NodePort
+  selector:
+    app: ai
+  ports:
+  - protocol: TCP
+    port: 8000
+    targetPort: 8000
+    nodePort: 30080
