@@ -16,5 +16,10 @@
 - open \docs in browser and you can upload by post and get querry by Get.
 - For Dockerize the model make requirements.txt file and docker file.
 - For building run [docker build -t ai-chatbot-fastapi .]
-- for running container run [docker run -p 8000:8000 ai-chatbot-fastapi]
+- For running container run
+    - Push docker image
+    - Need deployment.yaml and service.yaml
+    - After run this file You will get your URL (Public/Local) .
+
+
 
