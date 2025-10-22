@@ -20,6 +20,7 @@
     - Push docker image
     - Need deployment.yaml and service.yaml
     - After run this file You will get your URL (Public/Local) .
+    - [Docker + kubernate]
 
 
 
