@@ -10,7 +10,7 @@ faiss-cpu==1.8.0.post1           # FAISS vector store
 transformers==4.57.1             # Transformers library required by embeddings
 huggingface-hub==0.35.3          # Manage models & datasets from HuggingFace Hub
 numpy==1.26.4                    # Core numerical library required by PyTorch, FAISS, and transformers
-python-dotenv==1.1.1             # Optional: load .env files for API keys
+python-dotenv==1.1.1             #  load .env files for API keys
 torch==2.9.0
 python-multipart==0.0.20
 fastapi==0.115.0
