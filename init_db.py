@@ -2,6 +2,6 @@
 
 from models import Base, engine
 
-print("Creating database...")
+print("Creating database")
 Base.metadata.create_all(bind=engine)
 print("Database created successfully!")
