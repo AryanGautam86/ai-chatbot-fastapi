@@ -52,7 +52,15 @@ def query(q: str):
     answer = ask_question(q)
     return {"question": q, "answer": answer}
     
-# Run uvicorn safely on Windows
+# # Run uvicorn safely on Windows
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
+
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
+    import os
+
+    port = int(os.environ.get("PORT", 8000))  # Use Render's PORT or default 8000
+    uvicorn.run("main:app", host="0.0.0.0", port=port)
+
