@@ -61,6 +61,6 @@ if __name__ == "__main__":
     import uvicorn
     import os
 
-    port = int(os.environ.get("PORT", 8000))  # Use Render's PORT or default 8000
+    port = int(os.environ.get("PORT", 8000))  # Render's 
     uvicorn.run("main:app", host="0.0.0.0", port=port)
 
