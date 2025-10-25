@@ -2,8 +2,8 @@ services:
   - type: web
     name: my-fastapi-app
     env: docker
-    plan: free  # or whatever plan you use
+    plan: free  # whatever plan you use
     dockerfilePath: ./Dockerfile
     envVars:
       - key: PORT
-        value: "10000"   # Optional default port, Render will override in deploy
+        value: "10000"   # default port, Render will override in deploy
